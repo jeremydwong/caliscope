@@ -12,6 +12,8 @@
 dist/*
 *.epgz
 *.pdf
+.DS_Store
+*/.DS_Store
 tests/sessions_copy_delete/*
 dev/sessions_copy_delete/*
 dev/sample_sessions*

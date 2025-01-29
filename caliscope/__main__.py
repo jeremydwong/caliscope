@@ -3,6 +3,8 @@ import sys
 import caliscope.logger
 from caliscope.gui.main_widget import launch_main
 
+print("🎥 caliscope is starting up...let's process some motion!")
+
 logger = caliscope.logger.get(__name__)
 
 

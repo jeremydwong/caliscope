@@ -195,9 +195,10 @@ class Controller(QObject):
         Loads self.camera_array by first populating self.all_camera_data
         """
         # load all previously configured data if it is there
+        print(f"Entered load_camera_array()")
         preconfigured_cameras = self.config.get_configured_camera_data()
         self.camera_array = CameraArray(preconfigured_cameras)
-
+        print(f"camera array length {self.camera_count}")
         # double check that no new camera associated files have been placed in the intrinsic calibration folder
         all_ports = self.workspace_guide.get_ports_in_dir(self.workspace_guide.intrinsic_dir)
 
